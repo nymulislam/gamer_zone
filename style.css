@@ -14,10 +14,10 @@ body{
     font-weight: 600;
     padding: 12px 26px;
     border-radius: 48px;
+    cursor: pointer;
     border: 0;
     background-color: #FF42A5;
 }
-
 /* Navigation Section Style */
 nav{
     display: flex;
@@ -72,21 +72,10 @@ nav button{
 .banner{
     display: flex;
     align-items: center;
-    /* border: 2px solid red; */
 }
 .banner_info{
     width: 37%;
     padding: 130px 0 0 135px;
-    position: relative;
-    /* border: 2px solid red; */
-}
-.banner_info img{
-    width: 650px;
-    height: 700px;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -128px;
-    left: 0;
 }
 .banner_info h1{
     font-size: 5.5rem;
@@ -113,6 +102,62 @@ nav button{
 }
 .banner_btn_2{
     background-color: #4EC5F7;
+}
+
+/* Footer Section Style */
+footer{
+    height: 100%;
+    padding: 60px;
+    background: #0B0223;
+}
+.logo{
+    width: 6%;
+}
+.logo_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    gap: 15px;
+}
+.overview{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.overview li{
+    list-style: none;
+}
+.overview a{
+    text-decoration: none ;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.footer_icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+.policy{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0;
+}
+.policy a{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+#copyright{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 30px 0;
 }
 
 /* Large Mobile Responsive */
@@ -151,12 +196,6 @@ nav button{
         margin: 0 auto;
         padding: 50px;
         order: 1;
-    }
-    .banner_info img{
-        width: 450px;
-        height: 420px;
-        position: absolute;
-        top: 1px;
     }
     .banner_img img{
         width: 400px;
@@ -211,11 +250,6 @@ nav button{
         font-size: 1rem;
         font-weight: 600;
         padding: 8px 14px;
-    }
-    .banner_info img{
-        width: 50%;
-        position: absolute;
-        top: 1px;
     }
     .banner_img img{
         width: 400px;
