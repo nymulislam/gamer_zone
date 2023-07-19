@@ -163,8 +163,27 @@ html, body{
     gap: 15px;
     width: 100%;
     height: 100%;
+    position: relative;
 }
-
+.play_btn {
+    text-align: center;
+    font-size: 1.2rem;
+    border-color:#FF42A5 ;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 230px;
+    left: 710px;
+}
+.play_img{
+    position: absolute;
+    top: 165px;
+    left: 742px;
+    cursor: pointer;
+}
 /* Instantly Section Style */
 .instant_container{
     display: flex;
@@ -210,7 +229,6 @@ html, body{
     width: 250px;
     height: 280px;
     border-radius: 8px;
-    border: 10px solid #FFF;
     position: relative;
     top: -100px;
     left: -45px;
@@ -456,6 +474,14 @@ footer{
         width: 100%;
         height: 100%;
     }
+    .play_btn{
+        top: 1100px;
+        left: 165px;
+    }
+    .play_img{
+        top: 1000px;
+        left: 195px;
+    }
     
     /* Instantly Section Responsive */
     .instant_container{
@@ -674,7 +700,14 @@ footer{
             width: 100%;
             height: 100%;
     }
-
+    .play_btn{
+        top: 1730px;
+        left: 330px;
+    }
+    .play_img{
+        top: 1590px;
+        left: 355px;
+    }
     /* Instantly Section Responsive */
     .instant_container{
         flex-direction: column;
