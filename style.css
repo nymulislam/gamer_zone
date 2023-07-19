@@ -111,9 +111,45 @@ html, body{
     background-color: #4EC5F7;
 }
 
+/* Gaming Category Style */
+.gaming_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px 100px;
+    gap: 50px;
+}
+.gaming_row img{
+    width: 40px;
+    height: 40px;
+}
+.gaming_row button{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-radius: 50px;
+    background: #FFF;
+    color: #0B0223;
+    font-size: .8rem;
+    font-weight: 600;
+    border: 0;
+    gap: 10px;
+}
+.gaming_row button:hover{
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+    cursor: pointer;
+}
+#row2{
+    margin-left: 100px;
+}
+
 /* Footer Section Style */
 footer{
     padding: 60px;
+    padding-bottom: 20px;
     background: #0B0223;
 }
 .footer_logo{
@@ -154,6 +190,7 @@ footer{
     justify-content: center;
     gap: 50px;
     margin: 50px 0;
+    margin-bottom: 30px;
 }
 .policy li{
     list-style: none;
@@ -170,6 +207,7 @@ footer{
     font-size: 1rem;
     font-weight: 500;
     padding: 30px 0;
+    margin: 0;
 }
 
 /* Large Mobile Responsive */
@@ -237,45 +275,65 @@ footer{
         height: 85%
     }
 
+    /* Gaming Category Responsive */
+    .gaming_row{
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        margin: 50px 1px;
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .gaming_row button{
+        font-size: .6rem;
+    }
+    .gaming_row button img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #row2{
+        margin-left: 0;
+    }
     /* Footer Section Responsive */
-footer{
-    width: 100%;
-    padding: 0;
-}
-.footer_logo{
-    width: 12%;
-}
-.logo_text{
-    gap: 15px;
-}
-.overview{
-    flex-wrap: wrap;
-    gap: 30px;
-    padding-left: 2px;
-}
-.overview a{
-    font-size: 1rem;
-}
-.footer_icon{
-    justify-items: center;
-    margin-top: 50px;
-    gap: 5px;
-}
-.footer_icon img{
-    width: 55%;
-}
-.policy{
-    flex-wrap: wrap;
-    gap: 30px;
-    margin: 40px 0;
-    padding-left: 2px;
-}
-#copyright{
-    text-align: center;
-    font-size: 1rem;
-    padding: 0 50px 40px;
-    margin-bottom: 0;
-}
+    footer{
+        width: 100%;
+        padding: 0;
+    }
+    .footer_logo{
+        width: 12%;
+    }
+    .logo_text{
+        gap: 15px;
+    }
+    .overview{
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-left: 2px;
+    }
+    .overview a{
+        font-size: 1rem;
+    }
+    .footer_icon{
+        justify-items: center;
+        margin-top: 50px;
+        gap: 5px;
+    }
+    .footer_icon img{
+        width: 55%;
+    }
+    .policy{
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 40px 0;
+        padding-left: 2px;
+    }
+    #copyright{
+        text-align: center;
+        font-size: 1rem;
+        padding: 0 50px 40px;
+        margin-bottom: 0;
+    }
 }
 
 /* Tablet Responsive */
@@ -329,5 +387,34 @@ footer{
         width: 400px;
         height: 500px;
         margin: 40px 35px 20px 0;
+    }
+
+    /* Gaming Category Responsive */
+    .gaming_row{
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        margin: 80px;
+        gap: 45px;
+    }
+    #row2{
+        margin-left: 0;
+    }
+    /* Footer Section Responsive */
+    .overview a{
+        font-size: .8rem;
+    }
+    .footer_icon{
+        gap: 30px;
+    }
+    .footer_icon img{
+        width: 60%;
+    }
+    .policy{
+        padding-left: 0;
+    }
+    .policy a{
+        font-size: .9rem
+        ;
     }
 }
